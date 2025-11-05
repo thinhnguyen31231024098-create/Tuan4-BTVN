@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+      color: #333;
+      text-align: center;
+      margin: 40px;
+      overflow-x: hidden;
+    }
+
+    .profile {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      display: inline-block;
+      padding: 40px 60px;
+      animation: fadeInUp 1.2s ease both;
+    }
+
+    /* Ảnh đại diện */
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #007bff;
+      transition: transform 0.6s ease, box-shadow 0.4s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 0 25px rgba(0,123,255,0.5);
+    }
+
+    h1 {
+      color: #004080;
+      margin-top: 15px;
+      animation: tada 1s 1.5s both;
+    }
+
+    p {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #0066cc;
+      animation: fadeIn 1.2s ease 2s both;
+    }
+
+    .social {
+      margin: 10px 0 20px 0;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #ff6600;
+      transform: scale(1.1);
+    }
+
+    .links {
+      margin-top: 30px;
+      animation: fadeInUp 1.5s 2.5s both;
+    }
+
+    .links h2 {
+      color: #004080;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      color: #fff;
+      background-color: #007bff;
+      transform: translateY(-3px);
+    }
+
+    /* Hiệu ứng vào trang */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes tada {
+      0% {transform: scale(1);}
+      10%, 20% {transform: scale(0.9) rotate(-3deg);}
+      30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+      40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+      100% {transform: scale(1) rotate(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="profile animate__animated animate__zoomIn">
+    <img class="animate__animated animate__pulse animate__infinite" src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/503481467_696577983020654_4278739486788580949_n.jpg?stp=c0.12.439.439a_dst-jpg_s160x160_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEdZN8WERiQCIorwKxo5q4eQUgwxQCAUEVBSDDFAIBQRdGWRrWwzrm9IXzqfmLihF8h2_qf9Dz9clNtxyoLgsrt&_nc_ohc=hX5KhvX2sUsQ7kNvwGpRUJb&_nc_oc=AdmVh97vW5UVXmVImzBqLSKNEQj8eALTh0uQQ5D8OjeKI12IO2Jz76vdcwf2W972v_SBeDMTpgjuyN9ydCFptQbe&_nc_zt=24&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=K1CulTs_bBpV_jEYyU6mjQ&oh=00_AfixBNZGyhiY3X6uO1oYIlKOnhUQYSxUcHxWzNlL08uMcQ&oe=69110B96" alt="Ảnh đại diện">
+    <h1 class="animate__animated animate__fadeInDown">Nguyễn Liên Trường Thịnh</h1>
+    <p>MSSV: 31231024098</p>
+
+    <div class="social animate__animated animate__fadeInUp animate__delay-2s">
+      <a href="https://www.facebook.com/thinh.nguyen.809262" target="_blank"><bold>Facebook</bold></a>
+    </div>
+
+    <div class="links">
+      <h2>Danh sách bài tập</h2>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap1.html" target="_blank">Câu 1</a>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap2.html" target="_blank">Câu 2.a</a>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap3.html" target="_blank">Câu 2.b</a>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap4.html" target="_blank">Câu 2.b.ii</a>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap5.html" target="_blank">Câu 2.c</a>
+      <a class="animate__animated animate__fadeInLeft animate__delay-1s" href="Tuan4/VeNha/BaiTap6.html" target="_blank">Câu 3</a>
+    </div>
+  </div>
+
+</body>
+</html>
